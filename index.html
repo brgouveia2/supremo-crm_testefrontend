@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="icon" href="./assets/1630537533273.jpeg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container d-flex align-items-center justify-content-center min-vh-100">
+    <div class="card p-4" style="width: 450px;">
+      <div class="text-center mb-4">
+        <img src="./assets/1630537533273.jpeg" alt="Logomarca" style="width: 150px;">
+      </div>
+      <form id="login-form">
+        <div class="mb-3 input-group">
+          <span class="input-group-text"><i class="fa fa-user"></i></span>
+          <input type="text" class="form-control" id="username" placeholder="Digite seu usuário">
+        </div>
+        <div class="mb-3 input-group">
+          <span class="input-group-text"><i class="fa fa-lock"></i></span>
+          <input type="password" class="form-control" id="password" placeholder="Digite sua senha">
+        </div>
+        <div class="mb-3 text-end">
+          <a href="esqueci_senha.html" class="text-decoration-none">Esqueci minha senha</a>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("login-form").addEventListener("submit", function(event) {
+      event.preventDefault(); 
+      window.location.href = "notification_center.html";
+    });
+  </script>
+</body>
+</html>

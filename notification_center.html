@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle de Notificações</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container py-5">
+    <h3>Controle de Notificações</h3>
+    <div class="mb-4">
+      <button class="btn btn-success me-2"><i class="fa fa-plus"></i> Cadastrar Notificação</button>
+      <div class="notification-icon">
+        <button class="btn btn-primary">
+          <i class="fa fa-bell"></i>
+          <span class="notification-badge">3</span> <!-- Ícone de sino com o número de notificações -->
+        </button>
+      </div>
+    </div>
+    <div id="notifications">
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Novo Cliente</h5>
+          <p class="card-text">Você tem um novo cliente registrado.</p>
+          <button class="btn btn-warning btn-sm"><i class="fa fa-edit"></i> Editar</button>
+          <button class="btn btn-danger btn-sm"><i class="fa fa-trash"></i> Excluir</button>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Nova Proposta</h5>
+          <p class="card-text">Fulano de Tal encaminhou nova proposta</p>
+          <button class="btn btn-warning btn-sm"><i class="fa fa-edit"></i> Editar</button>
+          <button class="btn btn-danger btn-sm"><i class="fa fa-trash"></i> Excluir</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
