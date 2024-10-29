@@ -4,22 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Controle de Notificações</title>
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container py-5">
-    <h3>Controle de Notificações</h3>
-    <div class="mb-4">
+    <h3 class="fade-in-title">Controle de Notificações</h3>
+    <div class="mb-4 d-flex">
       <button class="btn btn-success me-2"><i class="fa fa-plus"></i> Cadastrar Notificação</button>
-      <div class="notification-icon">
-        <button class="btn btn-primary">
+      <div class="dropdown notification-icon">
+        <button class="btn btn-primary dropdown-toggle" type="button" id="notificationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
           <i class="fa fa-bell"></i>
-          <span class="notification-badge">3</span> <!-- Ícone de sino com o número de notificações -->
+          <span class="notification-badge">2</span>
         </button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="notificationDropdown">
+          <li class="dropdown-item">
+            <strong>Novo Cliente</strong><br>
+            <small>Recebido em: 29/10/2024 às 10:15</small>
+          </li>
+          <li><hr class="dropdown-divider"></li>
+          <li class="dropdown-item">
+            <strong>Atualização de Sistema</strong><br>
+            <small>Recebido em: 29/10/2024 às 14:30</small>
+          </li>
+        </ul>
       </div>
     </div>
+
     <div id="notifications">
       <div class="card mb-3">
         <div class="card-body">
@@ -31,13 +44,15 @@
       </div>
       <div class="card mb-3">
         <div class="card-body">
-          <h5 class="card-title">Nova Proposta</h5>
-          <p class="card-text">Fulano de Tal encaminhou nova proposta</p>
+          <h5 class="card-title">Nova Notificação</h5>
+          <p class="card-text">Conteúdo da notificação.</p>
           <button class="btn btn-warning btn-sm"><i class="fa fa-edit"></i> Editar</button>
           <button class="btn btn-danger btn-sm"><i class="fa fa-trash"></i> Excluir</button>
         </div>
       </div>
     </div>
   </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

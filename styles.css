@@ -23,3 +23,18 @@ div h3 {
     position: relative;
     display: inline-block;
   }
+
+  .fade-in-title {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
